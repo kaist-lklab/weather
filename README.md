@@ -9,6 +9,7 @@ _All runs were done on KAIST LK Lab RI server2 (@20.98.84.235)._
     docker run -d -it -p 8887:8887 --gpus all --name weather kaistlk/weather:v2022.03.0 python3 home/KoBART-summarization/run_api.py 8887 cpu
 - Choose the possible port number instead of "8887"
 - Choose the option between "cpu" and "gpu"
+- Remove the "--gpus all" option when you don't have a GPU.
 
 ## Connect to [Advanced REST client](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo/related) with Chrome
 
