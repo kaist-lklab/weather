@@ -5,7 +5,7 @@ _All runs were done on KAIST LK Lab RI server2 (@20.98.84.235)._
 ## Pull the docker image 
     docker pull kaistlk/weather:v2022.03.0
 
-## Run the containe
+## Run the container
     docker run -d -it -p 8887:8887 --gpus all --name weather kaistlk/weather:v2022.03.0 python3 home/KoBART-summarization/run_api.py 8887 cpu
 - Choose the possible port number instead of "8887"
 - Choose the option between "cpu" and "gpu"
