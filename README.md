@@ -5,9 +5,13 @@
 
 ## Run the container
 - When using the GPU,
+
 ```docker run -d -it -p 8887:8887 --gpus all --name weather kaistlk/weather:v2022.03.1 python3 home/KoBART-summarization/run_api.py 8887 gpu```
+
 - When using the CPU,
+
 ```docker run -d -it -p 8887:8887 --name weather kaistlk/weather:v2022.03.1 python3 home/KoBART-summarization/run_api.py 8887 cpu```
+
 _The number "8887" is a port number. Please change them all if you use a different port number._
 
 ## Connect to [Advanced REST client](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo/related) with Chrome
